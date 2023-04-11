@@ -1,0 +1,134 @@
+.header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color:#1C6758 ;
+}
+
+body {
+    background-color: #EEF2E6;
+}
+.container {
+    display: flex;
+
+}
+
+
+ h2:hover {
+    font-size: 40px;
+ }
+.one {
+    background-image: url("https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+}
+.two {
+    background-image: url("https://images.unsplash.com/photo-1608405059861-b21a68ae76a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+}
+.three {
+    background-image: url("https://images.unsplash.com/photo-1508583732154-e9ff899f8534?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+}
+.four {
+    background-image: url("https://images.unsplash.com/photo-1619969403139-65ed6035f460?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+}
+.item {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Raleway', sans-serif; 
+    flex: 1;
+    margin: 5px;
+    position: relative;
+    
+}
+
+h4 {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: #EEF2E6;
+  
+    color: #1C6758;
+    font-size: 0px;
+
+}
+
+.par {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    background-color: #EEF2E6;
+   
+    color: #1C6758;
+    font-size: 0px;
+}
+.parTwo {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    background-color: #EEF2E6;
+  
+    color: #1C6758;
+    font-size: 0px;
+}
+
+button {
+    background-color: #1C6758;
+    color: #EEF2E6;
+    font-family: 'Raleway', sans-serif; 
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    width: 50%;
+
+}
+.selected {
+    flex: 4;
+}
+
+.selected h4 {
+    transition: all 1s ease-in;
+    font-size: 20px;
+    
+}
+
+.selected .par {
+    transition: all 1s ease-in;   
+    font-size: 20px;
+}
+.selected .parTwo {
+    transition: all 1s ease-in; 
+    font-size: 20px;  
+}
+button:hover {
+    background-color: #3D8361;}
+
+
+@media all and (max-width:800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
+@media all and (max-width:500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .selected h4 {
+        font-size: 20px;
+        transition: all 1s ease-in;
+    }
+    .selected .par {
+        font-size: 10px;
+        transition: all 1s ease-in;
+    }
+    .selected .price {
+        font-size: 15px;
+        transition: all 1s ease-in;
+        margin-top: 200px;
+}
+
+}
